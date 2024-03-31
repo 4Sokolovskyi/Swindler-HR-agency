@@ -1,0 +1,39 @@
+@import "../../../../../App.scss";
+
+.backbtn {
+   // background-color: #E4F1FF;
+   background-color: white;
+
+   &__wrapper {
+      width: 1366px;
+      margin: auto;
+      padding: 10px;
+
+      @include desktop {
+         width: 100%;
+         padding: 20px;
+      }
+
+      .backbtn__button {
+         cursor: pointer;
+         width: fit-content;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         font-size: 22px;
+         padding: 12px 30px 12px 20px;
+         border-left: 1px solid black;
+         border-top-right-radius: 5px;
+         border-bottom-right-radius: 5px;
+
+         &:hover {
+            text-decoration: underline;
+            border-left: 4px solid black;
+            padding-left: 17px;
+            background-color: #E4F1FF;
+         }
+
+         span {}
+      }
+   }
+}
