@@ -1,9 +1,9 @@
 
 import { Link } from "react-router-dom"
-import {BsArrowRight} from "react-icons/bs"
+import { BsArrowRight } from "react-icons/bs"
 import "../info.scss"
 
-const SectionRight = ({title, img, text, linkPage}) => {
+const SectionRight = ({ title, img, text, linkPage }) => {
    return (
       <section className="info__section section">
          <div className="section__container">
@@ -13,11 +13,11 @@ const SectionRight = ({title, img, text, linkPage}) => {
             <div className="section__content">
                <h3 className="section__title">{title}</h3>
                <div className="section__text">{text}</div>
-               <Link to={linkPage} className="section__btn">Learn more <BsArrowRight /></Link>
+               <Link to={linkPage} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="section__btn">Learn more <BsArrowRight /></Link>
             </div>
          </div>
       </section>
    )
 }
-
+//onClick={window.scrollTo(0,0)}
 export default SectionRight
